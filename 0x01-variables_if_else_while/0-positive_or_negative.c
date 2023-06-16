@@ -3,10 +3,11 @@
 #include <time.h>
 
 /**
- *  main - printing random numbers and define if they
+ * main - Entry point
+ * Discription: printing random numbers and define if they
  *             are positive or negative or zero.
  *
- *  return : alwaysls 0.
+ *  return : always 0.
 */
 
 int main(void)
