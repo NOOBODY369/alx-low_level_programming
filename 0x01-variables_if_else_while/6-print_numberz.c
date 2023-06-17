@@ -2,7 +2,7 @@
 
 /**
  *  main - printing all single digit numbers of base 10
- * 			starting from 0 without using (char).
+ *				starting from 0 without using (char).
  * Return: always 0.
 */
 

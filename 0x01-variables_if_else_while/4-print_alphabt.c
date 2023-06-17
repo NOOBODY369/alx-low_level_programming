@@ -2,11 +2,11 @@
 
 /**
  *  main - printing lowercase alphabet except
- * 		'q' and 'e'
+ *			'q' and 'e'
  * Return: always 0.
 */
 
-int main()
+int main(void)
 {
 	char	alpha;
 
@@ -20,5 +20,5 @@ int main()
 		alpha++;
 	}
 	putchar('\n');
-	return(0);
+	return (0);
 }
