@@ -3,12 +3,12 @@
 /**
  *  main - printing alphabet in lowercase first
  *         uppercase 2nd.
- * Return:
+ * Return: always 0.
 */
 
 int main(void)
 {
-	char 	alpha;
+	char	alpha;
 	char	ALPHA;
 
 	alpha = 'a';
