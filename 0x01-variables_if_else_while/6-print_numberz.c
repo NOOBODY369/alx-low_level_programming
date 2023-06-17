@@ -1,0 +1,21 @@
+#include <stdio.h>
+
+/**
+ *  main - printing all single digit numbers of base 10
+ * 			starting from 0 without using (char).
+ * Return: always 0.
+*/
+
+int main(void)
+{
+	int	i;
+
+	i = 0;
+	while (i < 10)
+	{
+		putchar((i % 10) + '0');
+		i++;
+	}
+	putchar('\n');
+	return (0);
+}
