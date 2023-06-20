@@ -2,8 +2,9 @@
 
 /**
  * put_char - printing _putchar.
+ * parameterstr: where we store '_putchar'
  *
- * Return: str.
+ * Return: always 0.
 */
 
 void	put_char(char *str)
@@ -22,16 +23,15 @@ void	put_char(char *str)
 
 /**
  * main - main of put_char.
- *
  * Return: always 0.
 */
 
 int main(void)
 {
-	char	*c;
+	char	*str;
 
-	c = 0;
-	put_char(c);
+	str = 0;
+	put_char(str);
 
 	return (0);
 
