@@ -3,7 +3,7 @@
 /**
  * print_alphabet_x10 - printing alpha 10 times.
  *@n: number.
-
+*
  * Return: alyaws 0.
 */
 
@@ -19,3 +19,4 @@ void print_alphabet_x10(void)
 			_putchar(c);
 		_putchar('\n');
 	}
+}

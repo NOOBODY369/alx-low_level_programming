@@ -4,7 +4,7 @@
  * _isalpha - looking for upper and lowercase
  * @c: caracter.
  *
- * Return 1 for (success).
+ * Return: 1 for (success).
 */
 
 int _isalpha(int c)
