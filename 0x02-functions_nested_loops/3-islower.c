@@ -1,8 +1,8 @@
-#include <main.h>
+#include "main.h"
 
 /**
  * _islower - looking for lowercase
- *
+ * @c: caracter.
  * Return: 1 for (success)
 */
 

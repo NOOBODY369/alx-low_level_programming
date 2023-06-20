@@ -1,7 +1,8 @@
-#include <main.h>
+#include "main.h"
 
 /**
  * _isalpha - looking for upper and lowercase
+ * @c: caracter.
  *
  * Return 1 for (success).
 */

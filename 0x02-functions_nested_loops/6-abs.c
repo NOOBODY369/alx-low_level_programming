@@ -2,7 +2,8 @@
 
 /**
  * abs - computes the absolute value of an integer.
- *
+ *@n: number.
+ 
  * Return: absolute value of an integer.
 */
 
