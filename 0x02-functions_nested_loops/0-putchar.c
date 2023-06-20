@@ -12,12 +12,12 @@ void	put_char(char *str)
 
 	str = "_putchar";
 	i = 0;
-	while (i <= '\n')
+	while (i)
 	{
 		_putchar(str[i]);
 		i++;
 	}
-	write(1, '\n', 1);
+	_putchar('\n');
 }
 
 int main(void)
