@@ -1,7 +1,8 @@
 #include "main.h"
 
 /**
- * main - printing _putchar.
+ * put_char - printing _putchar.
+ * main - main of put_char.
  *
  * Return: always 0.
 */
@@ -12,7 +13,7 @@ void	put_char(char *str)
 
 	str = "_putchar";
 	i = 0;
-	while (i)
+	while (str[i])
 	{
 		_putchar(str[i]);
 		i++;
@@ -26,6 +27,7 @@ int main(void)
 
 	c = 0;
 	put_char(c);
+
 	return (0);
 
 }
