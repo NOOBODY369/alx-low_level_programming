@@ -3,18 +3,18 @@
 /**
  * put_char - printing _putchar.
  *
- * Return: always 0.
+ * Return: str.
 */
 
-void	put_char(char *c)
+void	put_char(char *str)
 {
 	int	i;
 
-	c = "_putchar";
+	str = "_putchar";
 	i = 0;
-	while (c[i])
+	while (str[i])
 	{
-		_putchar(c[i]);
+		_putchar(str[i]);
 		i++;
 	}
 	_putchar('\n');
