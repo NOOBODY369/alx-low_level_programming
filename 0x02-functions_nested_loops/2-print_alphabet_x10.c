@@ -2,7 +2,6 @@
 
 /**
  * print_alphabet_x10 - printing alpha 10 times.
- *@n: number.
 *
  * Return: alyaws 0.
 */
