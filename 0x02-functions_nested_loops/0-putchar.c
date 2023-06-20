@@ -19,3 +19,13 @@ void	put_char(char *str)
 	}
 	_putchar('\n');
 }
+
+int main(void)
+{
+	char	*c;
+
+	c = 0;
+	put_char(c);
+	return (0);
+
+}
