@@ -3,7 +3,7 @@
 /**
  * main - fizzbuzz
  *
- * return: always 0.
+ * Return: always 0.
 */
 
 int main(void)
@@ -12,7 +12,7 @@ int main(void)
 
 	while (i <= 100)
 	{
-		if ((i % 3 == 0 && i % 5== 0))
+		if ((i % 3 == 0 && i % 5 == 0))
 			printf("fizzbuzz");
 		else if (i % 3 == 0)
 			printf("fizz");
