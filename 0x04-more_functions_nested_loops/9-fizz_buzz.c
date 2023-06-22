@@ -21,8 +21,8 @@ int main(void)
 			printf("buzz");
 		else
 			printf("%i", i);
-		i++;
 		printf(" ");
+		i++;
 	}
 	printf("\n");
 	return (0);
