@@ -29,5 +29,5 @@ int _atoi(char *s)
 		nb = nb * 10 + (s[i] - '0');
 			i++;
 	}
-	return ((nb * sign));
+	return (sign * (int)nb);
 }
