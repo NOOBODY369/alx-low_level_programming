@@ -7,28 +7,41 @@
  * Return: string converted.
 */
 
-int _atoi(char *s)
+int	_atoi(char *s)
 {
-	int	i;
-	int	sign;
-	int	nb;
+	int	i,	d,	n,	len,	f,	digit;
 
 	i = 0;
-	sign = 1;
-	nb = 0;
-	while (s[i] == ' ' || (s[i] >= 9 && s[i] <= 13))
-		i++;
-	while (s[i] == '-' || s[i] == '+')
+	d = 0;
+	n = 0;
+	len = 0;
+	f = 0;
+	digit = 0;
+
+	while (s[len] != '\0')
+	len++;
+
+	while (i < len && f == 0)
 	{
-		if (s[i] == '-')
-			sign *= -1;
-		i++;
-	}
-	while (s[i] >= '0' && s[i] <= '9')
+	if (s[i] == '-')
+	++d;
+
+	if (s[i] >= '0' && s[i] <= '9')
 	{
-		nb = nb * 10 + (s[i] - '0');
-		i++;
+	digit = s[i] - '0';
+	if (d % 2)
+	digit = -digit;
+	n = n * 10 + digit;
+	f = 1;
+	if (s[i + 1] < '0' || s[i + 1] > '9')
+	break;
+	f = 0;
 	}
-	nb *= sign;
-	return (nb);
+	i++;
+	}
+
+	if (f == 0)
+	return (0);
+
+	return (n);
 }
