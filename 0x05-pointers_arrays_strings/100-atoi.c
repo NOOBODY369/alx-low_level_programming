@@ -16,7 +16,7 @@ int _atoi(char *s)
 	i = 0;
 	sign = 1;
 	nb = 0;
-	while (s[i] == ' ' || (s[i] >= 9 && s[i] <= 13))
+	while (s[i] && (s[i] == ' ' || (s[i] >= 9 && s[i] <= 13)))
 		++i;
 	if (s[i] == '+' || s[i] == '-')
 	{
@@ -27,7 +27,7 @@ int _atoi(char *s)
 	while (s[i] >= '0' && s[i] <= '9')
 	{
 		nb = nb * 10 + (s[i] - '0');
-			i++;
+		i++;
 	}
 	return (sign * (int)nb);
 }
