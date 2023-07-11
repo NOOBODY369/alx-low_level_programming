@@ -1,6 +1,25 @@
 #include "main.h"
 
 /**
+ * _strlen - count len
+ * @s: string to count
+ *
+ * Return: lenght.
+*/
+
+int	_strlen(char *s)
+{
+	unsigned int	i;
+
+	if (!s)
+		return (0);
+	i = 0;
+	while (s[i])
+		i++;
+	return (i);
+}
+
+/**
  * _strdup - function that returns a pointer to a newly
  * allocated space in memory which contains a copy of
  * the string given as a parameter.
@@ -11,17 +30,17 @@
 
 char	*_strdup(char *str)
 {
-	int		i, len;
-	char	*copy;
+	unsigned int	i, len;
+	char			*copy;
 
-	len = 0;
-	if (str == NULL)
+	i = 0;
+	len = _strlen(str);
+	if (!str)
 		return (NULL);
 	copy = malloc(sizeof(char) * (len + 1));
 	if (copy == NULL)
 		return (NULL);
-	i = 0;
-	while (str[i])
+	while (i < len)
 	{
 		copy[i] = str[i];
 		i++;
