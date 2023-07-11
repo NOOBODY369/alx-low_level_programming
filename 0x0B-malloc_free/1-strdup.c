@@ -11,17 +11,17 @@
 
 char	*_strdup(char *str)
 {
-	unsigned int	i, len;
-	char		   *copy;
+	int		i, len;
+	char	*copy;
 
-	i = 0;
 	len = 0;
 	if (str == NULL)
 		return (NULL);
-	copy = (char *)malloc(sizeof(char) * (len + 1));
+	copy = malloc(sizeof(char) * (len + 1));
 	if (copy == NULL)
 		return (NULL);
-	while (str[i] && i <= len)
+	i = 0;
+	while (str[i])
 	{
 		copy[i] = str[i];
 		i++;
