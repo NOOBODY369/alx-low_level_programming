@@ -10,15 +10,13 @@
 
 size_t	list_len(const list_t *h)
 {
-	const list_t	*tmp;
 	unsigned int	count;
 
 	count = 0;
-	tmp = h;
-	while (tmp)
+	while (h)
 	{
 		count++;
-		tmp = tmp->next;
+		h = h->next;
 	}
 	return (count);
 }

@@ -9,13 +9,10 @@
 
 void	free_list(list_t *head)
 {
-	list_t	*tmp;
-
 	while (head)
 	{
-		tmp = head->next;
 		free(head->s);
 		free(head);
-		head = tmp;
+		head = head->next;
 	}
 }
