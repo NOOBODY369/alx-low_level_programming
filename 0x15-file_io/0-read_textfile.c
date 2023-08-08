@@ -15,22 +15,30 @@
 ssize_t	read_textfile(const char *filename, size_t letters)
 {
 	char	*buffer;
+	int		fd;
 	ssize_t	readed;
 	ssize_t	written;
 
 	if (filename == NULL)
 		return (0);
+	fd = open(filename, O_RDONLY);
+	if (fd < 0)
+		return (0);
 	buffer = (char *)malloc(sizeof(char) * (letters + 1));
 	if (buffer == NULL)
 		return (0);
-	readed = read(buffer, sizeof(char), letters);
-	if (readed <= 0)
+	readed = read(fd, buffer, letters);
+	if (readed < 0)
+	{
 		free(buffer);
 		return (0);
+	}
 	written = write(STDOUT_FILENO, buffer, readed);
 	if (written != readed)
+	{
 		free(buffer);
 		return (0);
+	}
 	free(buffer);
 	return (written);
 }
